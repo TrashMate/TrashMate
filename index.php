@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+<?php session_start();
+?>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -83,14 +84,24 @@
                     >
                         <p id="item-counts">0</p>
                     </a>
-                    <a
+                    <?php
+                    echo '<a
+                    href="profile.html"
+                    id="profile-icon"
+                    style="
+                        background-image: url('.$_SESSION["user_image"].'");
+                    "
+                    >
+                    </a>';
+                    ?>
+                    <!-- <a
                         href="profile.html"
                         id="profile-icon"
                         style="
                             background-image: url('resources/icons/profile.svg');
                         "
                     >
-                    </a>
+                    </a> -->
                 </div>
             </div>
 

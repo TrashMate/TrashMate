@@ -19,6 +19,7 @@ if(isset($_GET["code"]))
 
  
   $_SESSION['access_token'] = $token['access_token'];
+  $_SESSION['token'] =  $token;
 
 
   $google_service = new Google_Service_Oauth2($google_client);

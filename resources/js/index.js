@@ -119,24 +119,24 @@ $(document).ready(function () {
             }
         }
     });
-    var hoverOrClickShowcase = function () {
-        window.scrollTo({
-            top: $(this)[0].offsetTop - $(".navbar").height(),
-            left: 0,
-            behavior: "smooth",
-        });
-        setTimeout(function () {
-            if (
-                window.scrollY ==
-                $(this)[0].offsetTop - $(".navbar").height()
-            ) {
-                $(".slick-current").focus();
-            }
-        }, 2600);
-        // window.scrollTo(0, $(this)[0].offsetTop - $(".navbar").height());
-        // $(".slick-current").focus();
-        // slider.slick("slickPause");
-    };
+    // var hoverOrClickShowcase = function () {
+    //     window.scrollTo({
+    //         top: $(this)[0].offsetTop - $(".navbar").height(),
+    //         left: 0,
+    //         behavior: "smooth",
+    //     });
+    //     setTimeout(function () {
+    //         if (
+    //             window.scrollY ==
+    //             $(this)[0].offsetTop - $(".navbar").height()
+    //         ) {
+    //             $(".slick-current").focus();
+    //         }
+    //     }, 2600);
+    //     // window.scrollTo(0, $(this)[0].offsetTop - $(".navbar").height());
+    //     // $(".slick-current").focus();
+    //     // slider.slick("slickPause");
+    // };
     // var hoverOrClickRightPost = function () {
     //     window.scrollTo({
     //         top: $(this)[0].offsetTop - $(".navbar").height(),

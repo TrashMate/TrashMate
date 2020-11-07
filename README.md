@@ -1,2 +1,3 @@
 # TrashMate
-spread trash spread love
+
+Don't let Trash to become Ash

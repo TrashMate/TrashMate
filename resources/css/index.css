@@ -433,6 +433,10 @@ body {
   padding: 1rem 1rem 0rem 1rem;
 }
 
+.products-div {
+  position: inherit;
+}
+
 .bubbly-button {
   font-family: "Helvetica", "Arial", sans-serif;
   letter-spacing: 0.2rem;

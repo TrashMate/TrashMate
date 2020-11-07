@@ -137,20 +137,20 @@ $(document).ready(function () {
         // $(".slick-current").focus();
         // slider.slick("slickPause");
     };
-    var hoverOrClickRightPost = function () {
-        window.scrollTo({
-            top: $(this)[0].offsetTop - $(".navbar").height(),
-            left: 0,
-            behavior: "smooth",
-        });
-    };
-    $(".showcase-div")
-        .click(hoverOrClickShowcase)
-        .hover(hoverOrClickShowcase, function () {
-            $(".slide-m-next").focus();
-            // slider.slick("slickPause");
-        });
-    $(".posts-div").hover(hoverOrClickRightPost).click(hoverOrClickRightPost);
+    // var hoverOrClickRightPost = function () {
+    //     window.scrollTo({
+    //         top: $(this)[0].offsetTop - $(".navbar").height(),
+    //         left: 0,
+    //         behavior: "smooth",
+    //     });
+    // };
+    // $(".showcase-div")
+    //     .click(hoverOrClickShowcase)
+    //     .hover(hoverOrClickShowcase, function () {
+    //         $(".slide-m-next").focus();
+    //         // slider.slick("slickPause");
+    //     });
+    // $(".posts-div").hover(hoverOrClickRightPost).click(hoverOrClickRightPost);
 
     // pxlist = [".center-div", ".right-div", ".left-div"];
     pxlist = [".left-div"];

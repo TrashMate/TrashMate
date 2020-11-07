@@ -1,4 +1,3 @@
 vendor
 composer.*
 .vscode
-resources/php/config.php

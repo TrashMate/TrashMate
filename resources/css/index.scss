@@ -1,0 +1,19 @@
+@import "./variables";
+@import "./main_layouts";
+@import "./navbar";
+@import "./center_div_contents";
+@import "./bubbly_button";
+@media (min-width: 900px) {
+    :root {
+        --navbar-size: 55px;
+    }
+    @import "./main_layouts_900";
+    @import "./navbar_900";
+    @import "./center_div_contents_900";
+    @import "./right_div_contents";
+    @import "./left_div_contents";
+}
+
+@media (max-width: 350px) {
+    @import "./center_div_contents_350";
+}

@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "stylo";
+    src: url("../fonts/styloRegular.otf");
+}
+:root {
+    --navbar-size: 44px;
+}
+
+$border-size: 1px;
+$color-shadows: rgb(89, 89, 89);
+$color-shadows-alpha: rgba(89, 89, 89, 0.6);
+$color-main-lighter: hsl(34, 55%, 89%);
+$color-main-black-lighter: rgb(233, 233, 233);
+$color-main-light: rgb(157, 89, 0);
+$color-main-light-alpha: rgba(157, 89, 0, 0.6);
+$color-main-dark: rgb(157, 55, 0);
+$color-main-dark-alpha: rgba(157, 55, 0, 0.6);
+$border-lighter: var($border-size) solid rgba(0, 0, 0, 0.06);
+
+// $navbar-size: 44px;
+
+$border-radius-windows: 21px;
+$border-radius-pages: 13px;
+$border-radius-small: 8px;
+
+$shadows-black: 0px 0px 8px rgba(0, 0, 0, 0.21);
+$shadows-black-dark: 0px 0px 5px rgba(0, 0, 0, 0.4);
+$shadows-main-color-up: 0px 0px 13px rgba(157, 89, 0, 0.6);
+$shadows-main-color-up-less: 0px 0px 8px rgba(157, 89, 0, 0.6);
+$shadows-inset-black: inset 0px 0px 10px rgba(0, 0, 0, 0.21);
+$shadows-inset-black-dark: 0px 0px -8px rgba(0, 0, 0, 0.4);
+$shadows-main-color: 0px 0px 8px rgba(157, 89, 0, 0.6);
+
+$grid-row-gap: 8px;
+$grid-column-gap: 0px;
+$shadow-dark-buttom: 0 3px 5px -5px rgba(0, 0, 0, 0.21);
+$shadow-dark-nav-buttom: 0 3px 3px 0px rgba(0, 0, 0, 0.21);
+$shadow-main-buttom: 0 8px 13px -3px rgba(157, 89, 0, 0.6);
+
+$page-padding-right: 1em;
+$grid-row-gap: 1em;
+$grid-column-gap: 1em;
+
+$page-padding-up: 1em;
+$page-padding-right: 1em;
+$page-padding-down: 1.6em;
+$page-padding-left: 1em;
+$logo-extra: 89px;
+
+$fuschia: $color-main-dark-alpha;
+$button-bg: $fuschia;
+$button-text-color: #fff;
+$baby-blue: #f8faff;

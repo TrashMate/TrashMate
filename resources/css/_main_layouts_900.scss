@@ -1,0 +1,49 @@
+@import "./navbar_900";
+body {
+    margin: $page-padding-up $page-padding-right $page-padding-down
+        $page-padding-left;
+}
+
+.logo,
+.left-div,
+.right-div,
+.pages span,
+.pages p,
+.profile span,
+.profile p {
+    display: inline;
+}
+.grid-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 5fr 13fr 8fr;
+    grid-template-rows: var(--navbar-size) $logo-extra min-content;
+    grid-gap: $grid-row-gap $grid-column-gap;
+}
+
+.profile,
+.left-div,
+.center-div,
+.right-div {
+    text-align: center;
+}
+
+.center-div,
+.right-div {
+    grid-row: 2 / 4;
+    margin-top: 2.6rem;
+}
+
+.left-div {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    margin-top: 1rem;
+}
+
+.center-div {
+    grid-column: 2 / -2;
+}
+
+.right-div {
+    grid-column: -2 / -1;
+}

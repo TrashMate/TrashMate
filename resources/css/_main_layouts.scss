@@ -1,0 +1,25 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.grid-container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: var(--navbar-size) auto;
+    grid-template-columns: 1fr;
+}
+
+.logo,
+.left-div,
+.right-div {
+    display: none;
+}
+
+.center-div {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+    text-align: center;
+}

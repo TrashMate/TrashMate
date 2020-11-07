@@ -1,0 +1,12 @@
+@import "./languages_logos_900";
+
+.products {
+    // width: 100%;
+    // width: initial;
+    // display: flex;
+    width: calc(13 / 26 * 100vw - #{$grid-column-gap} - #{$page-padding-left});
+    // width: auto;
+    // display: block;
+    margin: 0px 0px;
+    padding: 0px;
+}

@@ -1,0 +1,104 @@
+.navbar {
+    // position: fixed;
+    // width: auto;
+    // width: calc(
+    //     (13 + 8) / 26 * 100% -
+    //         (2 * #{$grid-column-gap} + #{$page-padding-right})
+    // );
+    height: var(--navbar-size);
+    position: sticky;
+    top: 0.6rem;
+    right: $page-padding-right;
+    grid-column: 2 / -1;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+
+    // padding: 1.6rem 0px 0px 0px;
+    margin-top: 1.6rem;
+}
+
+.logo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    margin-top: 1.6rem;
+    display: flex;
+    z-index: 2;
+    position: sticky;
+    // position: relative;
+    top: 0.6rem;
+    justify-content: center;
+    cursor: pointer;
+    // height: calc(#{$logo-extra} + var(--navbar-size));
+    // width: calc(5 / 26 * 100% - #{$grid-column-gap} - #{$page-padding-left});
+}
+.logo img {
+    position: relative;
+
+    // position: sticky;
+    top: 0;
+    // margin-top: 1rem;
+    height: calc(#{$logo-extra} + var(--navbar-size));
+    max-width: calc(
+        5 / 26 * 100vw - #{$grid-column-gap} - #{$page-padding-left}
+    );
+    filter: drop-shadow(5px 5px 8px $color-main-light-alpha);
+    transition: filter 0.1s;
+}
+
+.logo img:hover {
+    filter: drop-shadow(5px 5px 5px $color-main-light);
+}
+
+.profile {
+    border: none;
+    box-shadow: none;
+}
+
+.pages a,
+.profile a {
+    height: var(--navbar-size);
+    width: var(--navbar-size);
+    font-weight: 800;
+    background-repeat: no-repeat;
+    background-size: auto 60%;
+    background-position: center center;
+    background-color: rgba(255, 255, 255, 0.96);
+    border-radius: 0px;
+    border: 0px;
+    box-shadow: $shadow-dark-buttom;
+
+    padding: 0px 13px;
+    border-radius: $border-radius-pages;
+    border: $border-lighter;
+    margin-right: 13px;
+    box-shadow: 0px 0px 21px rgba(0, 0, 0, 0.21);
+
+    transition: box-shadow 0.1s, transform 0.1s;
+}
+
+#item-counts {
+    font-size: 1.3em;
+    margin: 0.5em 0px 0px 0.21em;
+}
+
+#profile-icon {
+    background-size: auto 80%;
+    background-position: center 0.38rem;
+    border-radius: 21px;
+    width: 34px;
+}
+
+.selected-page {
+    transform: scale(0.96);
+    box-shadow: 0px 0px 13px rgba(157, 89, 0, 0.6) !important;
+    color: $color-main-dark !important;
+}
+.pages a:hover,
+.profile a:hover {
+    transform: scale(0.96);
+    box-shadow: 0px 0px 13px rgba(157, 89, 0, 0.6);
+    /* background-color: $color-main-lighter; */
+}

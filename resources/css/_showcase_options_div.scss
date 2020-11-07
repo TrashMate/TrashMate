@@ -1,0 +1,67 @@
+@mixin verticalCenter($padding) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: $padding;
+}
+
+.showcase-options-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0.6rem 0.6rem 1rem;
+    .showcase-main-div {
+        padding: 1rem 1rem 1rem 0.6rem;
+        h3 {
+            margin: 0.6rem;
+        }
+    }
+    .product-price {
+        padding: 0rem 1rem 1rem 1rem;
+    }
+    .add-to-card-div {
+        padding-bottom: 1.4rem;
+        @include verticalCenter(0.6);
+    }
+}
+
+.showcase-option {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0rem 0.6rem 1.6rem 0.6rem;
+    border-radius: 0px 0px $border-radius-small $border-radius-small;
+    padding: 0rem 1.6rem 0rem 0.6rem;
+    box-shadow: $shadows-black;
+    background-color: rgba($color: #fff, $alpha: 0.6);
+    cursor: pointer;
+    transition: transform 0.2s ease-out, box-shadow 0.3s ease-out;
+    &:hover {
+        transform: scale(1.06);
+        box-shadow: 0px 0px 13px rgba($color: #000000, $alpha: 0.3);
+        img,
+        h2 {
+            box-shadow: $shadows-main-color-up;
+        }
+    }
+    img {
+        border-radius: 55px;
+        box-shadow: $shadows-black;
+        margin: auto;
+    }
+    h2 {
+        padding: 0.6rem;
+        height: fit-content;
+        box-shadow: $shadows-black;
+        border-radius: 5px;
+    }
+    .showcase-option-value {
+        @include verticalCenter(0.6);
+    }
+}
+
+// .showcase-value-div {
+//     display: flex;
+//     padding: 0.4rem;
+//     flex-wrap: wrap;
+//     flex-direction: column;
+// }

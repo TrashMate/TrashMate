@@ -47,3 +47,23 @@ for (i = 1; i < 13; ++i) {
         p = 1;
     }
 }
+
+n = 6;
+p = 1;
+centerhtml = $(".top-post-div")[0].outerHTML;
+centerdiv = $(".center-div")[0];
+div = document.createElement("div");
+for (i = 1; i < 34; ++i) {
+    temp = centerhtml.replace("taker1", "taker" + p);
+    div = document.createElement("div");
+    centerdiv.appendChild(div);
+    div.outerHTML = temp;
+    ++p;
+    if (p == 7) {
+        p = 1;
+    }
+}
+pxlist = [".left-div", ".center-div"];
+for (i = 0; i < pxlist.length; ++i) {
+    $(pxlist[i]).paroller();
+}

@@ -766,13 +766,6 @@ body {
             box-shadow: 0px 0px 13px rgba(157, 89, 0, 0.6);
     /* background-color: $color-main-lighter; */
   }
-  .center-div {
-    position: fixed;
-    width: calc(13 / 26 * 100vw - 1em - 1em);
-    left: calc(5 / 26 * 100vw - 1em - 1em);
-    top: 55px;
-    overflow: hidden;
-  }
   .center-div h1 {
     font-family: "Sedgwick Ave Display";
   }
@@ -863,6 +856,55 @@ body {
   }
   .left-div .left-post-div .post-img img {
     width: 100%;
+  }
+  .center-div .top-post-div {
+    margin-top: 34px;
+  }
+  .center-div .top-post-div .post-img img {
+    position: relative;
+    z-index: 2;
+    border-radius: 0px 0px 13px;
+    -webkit-box-shadow: 0px 0px 13px rgba(157, 89, 0, 0.6);
+            box-shadow: 0px 0px 13px rgba(157, 89, 0, 0.6);
+    width: calc( 13 / 26 * 100vw - 1em - 1em - 1em - 1em);
+  }
+  .center-div .top-post-div .top-profile-div {
+    z-index: 1;
+    position: -webkit-sticky;
+    position: sticky;
+    padding: 1rem;
+    border-radius: 8px 8px 0px 0px;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  }
+  .center-div .top-post-div .top-profile-div .top-profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0px 0px 0.5rem 0px;
+  }
+  .center-div .top-post-div .top-profile-div .top-profile img {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+  }
+  .center-div .top-post-div .top-profile-div .top-profile a {
+    font-size: 1.2rem;
+    margin: 0rem 0px 0px 0.6rem;
+    text-align: left;
+    color: #000000;
+    text-decoration: none;
+  }
+  .center-div .top-post-div .top-profile-div .top-profile p {
+    margin: 3px;
+    font-size: 0.9rem;
+  }
+  .center-div .top-post-div .top-profile-div p {
+    text-align: left;
+  }
+  .center-div h2 {
+    margin-top: 34px;
   }
 }
 

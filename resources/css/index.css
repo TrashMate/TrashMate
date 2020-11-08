@@ -1,6 +1,6 @@
 @font-face {
   font-family: "stylo";
-  src: url("../fonts/BRUSHSTP.ttf");
+  src: url("../fonts/BRUSHSTP.ttf") format("truetype");
 }
 
 :root {
@@ -29,13 +29,6 @@ body {
 }
 
 .center-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   grid-column: 1 / -1;
   grid-row: 2 / -1;
   text-align: center;
@@ -110,68 +103,6 @@ body {
   -webkit-box-shadow: 0 8px 13px -3px rgba(157, 89, 0, 0.6) !important;
           box-shadow: 0 8px 13px -3px rgba(157, 89, 0, 0.6) !important;
   color: #9d3700 !important;
-}
-
-.languages {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 1.3em 1.6em 1em;
-}
-
-.languages img {
-  margin: 8px auto;
-  cursor: pointer;
-  max-width: 8em;
-  -webkit-filter: drop-shadow(5px 3px 3px rgba(89, 89, 89, 0.6));
-          filter: drop-shadow(5px 3px 3px rgba(89, 89, 89, 0.6));
-  -webkit-transition: -webkit-filter 0.1s;
-  transition: -webkit-filter 0.1s;
-  transition: filter 0.1s;
-  transition: filter 0.1s, -webkit-filter 0.1s;
-}
-
-.languages img:nth-child(1) {
-  margin-right: 2rem;
-}
-
-.languages img:nth-child(3) {
-  margin-left: 2rem;
-}
-
-.languages img:hover {
-  -webkit-filter: drop-shadow(5px 3px 2px #595959);
-          filter: drop-shadow(5px 3px 2px #595959);
-}
-
-.selected-language {
-  -webkit-filter: drop-shadow(5px 3px 3px rgba(157, 89, 0, 0.6)) !important;
-          filter: drop-shadow(5px 3px 3px rgba(157, 89, 0, 0.6)) !important;
-}
-
-.selected-language:hover {
-  -webkit-filter: drop-shadow(5px 3px 2px #9d5900) !important;
-          filter: drop-shadow(5px 3px 2px #9d5900) !important;
-}
-
-.stylo-font {
-  -webkit-filter: drop-shadow(0px 1px 8px #fff);
-          filter: drop-shadow(0px 1px 8px #fff);
-  color: #000;
-  padding: 1rem;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3 / 4;
-  grid-column: 1 / -1;
-  z-index: 1;
-  font-family: "stylo";
-  font-size: 2.1rem;
-  margin: 0.3rem 0em 0em 1.2rem;
-  letter-spacing: 0.16em;
 }
 
 .showcase-div {
@@ -835,22 +766,15 @@ body {
             box-shadow: 0px 0px 13px rgba(157, 89, 0, 0.6);
     /* background-color: $color-main-lighter; */
   }
-  .languages {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .center-div {
+    position: fixed;
+    width: calc(13 / 26 * 100vw - 1em - 1em);
+    left: calc(5 / 26 * 100vw - 1em - 1em);
+    top: 55px;
+    overflow: hidden;
   }
-  .languages img:nth-child(1) {
-    margin: 0px 1rem 0px 0px !important;
-  }
-  .languages img:nth-child(3) {
-    margin: 0px 0px 0px 1rem !important;
-  }
-  .languages img {
-    max-width: 9em;
-  }
-  .stylo-font {
-    margin-top: 0.6rem;
+  .center-div h1 {
+    font-family: "Sedgwick Ave Display";
   }
   .products {
     width: calc(13 / 26 * 100vw - 1em - 1em);
@@ -894,12 +818,6 @@ body {
 }
 
 @media (max-width: 350px) {
-  .languages img:nth-child(1) {
-    margin-right: 0.6rem;
-  }
-  .languages img:nth-child(3) {
-    margin-left: 0.6rem;
-  }
   .showcase-div {
     margin: 0rem;
     padding: 0rem;

@@ -92,11 +92,6 @@ body {
   margin: 0.5em 0px 0px 0.23em;
 }
 
-#profile-icon {
-  background-size: auto 74%;
-  background-position: center 0.36rem;
-}
-
 .selected-page {
   margin-top: calc(0px - 1px);
   border: var(1px) solid rgba(0, 0, 0, 0.06) !important;
@@ -1058,8 +1053,7 @@ img {
     margin: 0.5em 0px 0px 0.21em;
   }
   #profile-icon {
-    background-size: auto 80%;
-    background-position: center 0.38rem;
+    background-size: auto 120%;
     border-radius: 21px;
   }
   .selected-page {
@@ -1217,8 +1211,7 @@ img {
     margin: 0.5em 0px 0px 0.21em;
   }
   #profile-icon {
-    background-size: auto 80%;
-    background-position: center 0.38rem;
+    background-size: auto 120%;
     border-radius: 21px;
   }
   .selected-page {

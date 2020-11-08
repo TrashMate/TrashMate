@@ -17,53 +17,76 @@ $(document).ready(function () {
         bubblyButtons[i].addEventListener("click", animateButton, false);
     }
 
-    n = 6;
-    p = 1;
+    nt = 17;
+    ng = 11;
     lefthtml = $(".left-post-div")[0].outerHTML;
     leftdiv = $(".left-div")[0];
-    div = document.createElement("div");
-    for (i = 1; i < 89; ++i) {
-        temp = lefthtml.replace("taker1", "taker" + p);
-        div = document.createElement("div");
-        leftdiv.appendChild(div);
-        div.outerHTML = temp;
-        ++p;
-        if (p == 7) {
-            p = 1;
-        }
-    }
-
-    n = 6;
-    p = 1;
     righthtml = $(".right-post-div")[0].outerHTML;
     rightdiv = $(".right-div")[0];
-    div = document.createElement("div");
-    for (i = 1; i < 13; ++i) {
-        temp = righthtml.replace("taker1", "taker" + p);
-        div = document.createElement("div");
-        rightdiv.appendChild(div);
-        div.outerHTML = temp;
-        ++p;
-        if (p == 7) {
-            p = 1;
-        }
-    }
-
-    n = 6;
-    p = 1;
     centerhtml = $(".top-post-div")[0].outerHTML;
     centerdiv = $(".center-div")[0];
     div = document.createElement("div");
-    for (i = 1; i < 34; ++i) {
-        temp = centerhtml.replace("taker1", "taker" + p);
+    for (i = 1; i < 89; ++i) {
+        temp = lefthtml.replace(
+            "giver1",
+            "giver" + Math.floor(Math.random() * ng + 1)
+        );
+        div = document.createElement("div");
+        leftdiv.appendChild(div);
+        div.outerHTML = temp;
+
+        temp = righthtml.replace(
+            "taker1",
+            "taker" + Math.floor(Math.random() * nt + 1)
+        );
+        div = document.createElement("div");
+        rightdiv.appendChild(div);
+        div.outerHTML = temp;
+        templ = ["taker", "giver"];
+        temp = centerhtml.replace(
+            "taker1",
+            templ[Math.floor(Math.random() * 1)] +
+                Math.floor(Math.random() * nt + 1)
+        );
         div = document.createElement("div");
         centerdiv.appendChild(div);
         div.outerHTML = temp;
-        ++p;
-        if (p == 7) {
-            p = 1;
-        }
     }
+
+    // n = 11;
+    // righthtml = $(".right-post-div")[0].outerHTML;
+    // rightdiv = $(".right-div")[0];
+    // div = document.createElement("div");
+    // for (i = 1; i < 13; ++i) {
+    //     temp = righthtml.replace(
+    //         "taker1",
+    //         "taker" + Math.floor(Math.random() * n + 1)
+    //     );
+    //     div = document.createElement("div");
+    //     rightdiv.appendChild(div);
+    //     div.outerHTML = temp;
+    //     ++p;
+    //     if (p == 7) {
+    //         p = 1;
+    //     }
+    // }
+
+    // n = 6;
+    // p = 1;
+    // centerhtml = $(".top-post-div")[0].outerHTML;
+    // centerdiv = $(".center-div")[0];
+    // div = document.createElement("div");
+    // for (i = 1; i < 34; ++i) {
+    //     temp = centerhtml.replace("taker1", "taker" + p);
+    //     div = document.createElement("div");
+    //     centerdiv.appendChild(div);
+    //     div.outerHTML = temp;
+    //     ++p;
+    //     if (p == 7) {
+    //         p = 1;
+    //     }
+    // }
+
     pxlist = [".left-div", ".center-div"];
     for (i = 0; i < pxlist.length; ++i) {
         $(pxlist[i]).paroller();

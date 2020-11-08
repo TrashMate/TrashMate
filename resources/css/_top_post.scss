@@ -1,11 +1,12 @@
 .top-post-div {
     margin-top: 34px;
     .post-img {
+        box-shadow: $shadows-main-color-up;
+        background-color: white;
         img {
             position: relative;
             z-index: 2;
             border-radius: 0px 0px $border-radius-pages;
-            box-shadow: $shadows-main-color-up;
             width: calc(
                 13 / 26 * 100vw - #{$grid-column-gap} - #{$page-padding-left} -
                     #{$grid-column-gap} - #{$grid-column-gap}

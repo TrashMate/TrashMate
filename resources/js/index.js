@@ -20,13 +20,14 @@ $(document).ready(function () {
     nt = 17;
     ng = 11;
     dps = [
-        "https://avatars0.githubusercontent.com/u/50572161?s=400&u=b8063c80b26b78eb3eee4e1efb1ae361e2a32c4b&v=4",
-        "https://avatars1.githubusercontent.com/u/65721283?s=400&u=5d8bf8f5a8422ab9603895f9f9e8ebbbb33fc2d9&v=4",
-        "resources/imgs/0.jpeg",
-        "resources/imgs/1.jpeg",
-        "resources/imgs/2.jpeg",
-        "resources/imgs/3.jpeg",
+        ["resources/imgs/4.jpeg", "Thithi Mukherjee"],
+        ["resources/imgs/5.jpeg", "Navpreet Devpuri"],
+        ["resources/imgs/0.jpeg", "Navpreet Devpuri"],
+        ["resources/imgs/1.jpeg", "Indrashis Mitra"],
+        ["resources/imgs/2.jpeg", "Sulugna Mukherjee"],
+        ["resources/imgs/3.jpeg", "Yashi Srivastava"],
     ];
+    states = ["Punjab", "UP", "West Bengal"];
     lefthtml = $(".left-post-div")[0].outerHTML;
     leftdiv = $(".left-div")[0];
     righthtml = $(".right-post-div")[0].outerHTML;
@@ -39,10 +40,9 @@ $(document).ready(function () {
             "giver1",
             "giver" + Math.floor(Math.random() * ng + 1)
         );
-        temp = temp.replace(
-            "resources/imgs/0.jpeg",
-            dps[Math.floor(Math.random() * dps.length)]
-        );
+        rtemp = Math.floor(Math.random() * dps.length);
+        temp = temp.replace("resources/imgs/0.jpeg", dps[rtemp][0]);
+        temp = temp.replace("Navpreet Singh Devpuri", dps[rtemp][1]);
         div = document.createElement("div");
         leftdiv.appendChild(div);
         div.outerHTML = temp;
@@ -52,11 +52,10 @@ $(document).ready(function () {
             "taker" + Math.floor(Math.random() * nt + 1)
         );
 
-        temp = temp.replace(
-            "resources/imgs/0.jpeg",
-            dps[Math.floor(Math.random() * dps.length)]
-        );
-
+        rtemp = Math.floor(Math.random() * dps.length);
+        temp = temp.replace("resources/imgs/0.jpeg", dps[rtemp][0]);
+        temp = temp.replace("Navpreet Singh Devpuri", dps[rtemp][1]);
+        temp = temp.replace("Punjab", states[Math.floor(Math.random() * 3)]);
         div = document.createElement("div");
         rightdiv.appendChild(div);
         div.outerHTML = temp;
@@ -67,12 +66,13 @@ $(document).ready(function () {
             templ[Math.floor(Math.random() * 1)] +
                 Math.floor(Math.random() * nt + 1)
         );
-        temp = temp.replace(
-            "resources/imgs/0.jpeg",
-            dps[Math.floor(Math.random() * dps.length)]
-        );
+        rtemp = Math.floor(Math.random() * dps.length);
+        temp = temp.replace("resources/imgs/0.jpeg", dps[rtemp][0]);
+        temp = temp.replace("Navpreet Singh Devpuri", dps[rtemp][1]);
+        temp = temp.replace("Punjab", states[Math.floor(Math.random() * 3)]);
         div = document.createElement("div");
         centerdiv.appendChild(div);
+
         div.outerHTML = temp;
     }
 

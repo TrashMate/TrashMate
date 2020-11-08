@@ -960,6 +960,33 @@ img {
   cursor: pointer;
 }
 
+.main-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 0px 0.5rem 0px;
+}
+
+.main-profile img {
+  border-radius: 50%;
+  width: 89px;
+  height: 89px;
+  cursor: pointer;
+}
+
+.main-profile a {
+  font-size: 1.6rem;
+  margin: 0rem 0px 0px 0.6rem;
+  text-align: left;
+  color: #000000;
+  text-decoration: none;
+}
+
+.main-profile p {
+  margin: 3px;
+  font-size: 1.2rem;
+}
+
 @media (min-width: 900px) {
   :root {
     --navbar-size: 55px;

@@ -6,7 +6,7 @@
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <link rel="stylesheet" type="text/css" href="resources/css/index.css" />
+        <link rel="stylesheet" type="text/css" href="../css/index.css" />
         <link
             href="https://fonts.googleapis.com/css?family=Sedgwick Ave Display"
             rel="stylesheet"
@@ -21,6 +21,7 @@
             type="text/css"
             href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
         />
+
         <link
             rel="stylesheet"
             type="text/css"
@@ -60,33 +61,26 @@
     <body>
         <div class="grid-container">
             <a href="about.html" class="logo">
-                <img src="resources/logo/logo_giver.svg" alt="" />
+                <img src="../logo/logo_giver.svg" alt="" />
             </a>
             <div class="navbar1">
                 <div class="pages">
                     <a
                         href="index.html"
                         id="page-home"
-                        style="
-                            background-image: url('resources/icons/home.svg');
-                        "
+                        style="background-image: url('../icons/home.svg')"
                     >
                     </a>
                     <a
                         href="contact.html"
-                        class="selected-page"
                         id="page-contact"
-                        style="
-                            background-image: url('resources/icons/contact-selected.svg');
-                        "
+                        style="background-image: url('../icons/contact.svg')"
                     >
                     </a>
                     <a
                         href="about.html"
                         id="page-about"
-                        style="
-                            background-image: url('resources/icons/about.svg');
-                        "
+                        style="background-image: url('../icons/about.svg')"
                     >
                     </a>
                 </div>
@@ -95,14 +89,15 @@
                         href="search.html"
                         id="search-icon"
                         style="
-                            background-image: url('resources/icons/search.svg');
+                            background-image: url('../icons/search.svg');
                         "
                     >
                     </a> -->
                     <a
                         href="profile.html"
                         id="profile-icon"
-                        style="background-image: url('resources/imgs/5.jpeg')"
+                        class="selected-page"
+                        style="background-image: url('../imgs/5.jpeg')"
                     >
                     </a>
                 </div>
@@ -117,11 +112,11 @@
                 <h2>Recent Giver posts</h2>
                 <div class="left-post-div">
                     <div class="left-profile">
-                        <img src="resources/imgs/0.jpeg" alt="" />
-                        <a href="#">Navpreet Singh Devpuri</a>
+                        <img src="../imgs/3.jpeg" alt="" />
+                        <a href="#">Yashi Srivastava</a>
                     </div>
                     <div class="post-img">
-                        <img src="resources/imgs/taker1.jpg" alt="" />
+                        <img src="../imgs/giver1.jpg" alt="" />
                     </div>
                 </div>
             </div>
@@ -132,45 +127,53 @@
                 data-paroller-direction="vertical"
             >
                 <h1 class="stylo-font">Trash to Treasure</h1>
-                <div>
-                    <h3>Contact us without any hesitation</h3>
-                </div>
-                <div class="contact-div">
+                <div class="showcase-div">
                     <div class="showcase-options-div">
                         <div class="showcase-options">
+                            <div class="main-profile">
+                                <img src="../imgs/3.jpeg" alt="" />
+                                <a href="#"
+                                    >Yashi Srivastava
+                                    <p>. from UP</p>
+                                </a>
+                            </div>
                             <div class="showcase-options-container">
                                 <div class="showcase-option">
                                     <div class="showcase-main-div">
                                         <h3 class="showcase-option-name">
-                                            Gmail
+                                            Gives
                                         </h3>
-                                        <a
-                                            target="_blank"
-                                            href="mailto:TrashMateApp@gmail.com"
-                                        >
-                                            <img
-                                                src="resources/icons/gmail.svg"
-                                                height="89"
-                                                width="89"
-                                        /></a>
+                                        <img
+                                            src="../logo/logo_giver.svg"
+                                            height="89"
+                                            width="89"
+                                        />
+                                    </div>
+                                    <div class="showcase-option-value">
+                                        <h2>5</h2>
                                     </div>
                                 </div>
                                 <div class="showcase-option">
                                     <div class="showcase-main-div">
                                         <h3 class="showcase-option-name">
-                                            Facebook
+                                            Takes
                                         </h3>
-                                        <a
-                                            target="_blank"
-                                            href="https://www.facebook.com/TrashMate-100273465237383"
-                                        >
-                                            <img
-                                                src="resources/icons/facebook.svg"
-                                                height="89"
-                                                width="89"
-                                        /></a>
+                                        <img
+                                            src="../logo/logo_taker.svg"
+                                            height="89"
+                                            width="89"
+                                        />
+                                    </div>
+                                    <div class="showcase-option-value">
+                                        <h2>8</h2>
                                     </div>
                                 </div>
+                            </div>
+
+                            <div class="send-friend-request">
+                                <button class="bubbly-button">
+                                    Send request
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -179,16 +182,16 @@
                 <div class="top-post-div">
                     <div class="top-profile-div">
                         <div class="top-profile">
-                            <img src="resources/imgs/0.jpeg" alt="" />
+                            <img src="../imgs/3.jpeg" alt="" />
                             <a href="#"
-                                >Navpreet Singh Devpuri at Punjab
+                                >Yashi Srivastava at UP
                                 <p>. 3 minutes ago</p>
                             </a>
                         </div>
                         <p class="post-discription">look at this Creativity.</p>
                     </div>
                     <div class="post-img">
-                        <img src="resources/imgs/taker1.jpg" alt="" />
+                        <img src="../imgs/taker1.jpg" alt="" />
                     </div>
                 </div>
             </div>
@@ -202,16 +205,16 @@
                 <div class="right-post-div">
                     <div class="right-profile-div">
                         <div class="right-profile">
-                            <img src="resources/imgs/0.jpeg" alt="" />
+                            <img src="../imgs/3.jpeg" alt="" />
                             <a href="#"
-                                >Navpreet Singh Devpuri at Punjab
+                                >Yashi Srivastava at UP
                                 <p>. 3 minutes ago</p>
                             </a>
                         </div>
                         <p class="post-discription">look at this Creativity.</p>
                     </div>
                     <div class="post-img">
-                        <img src="resources/imgs/taker1.jpg" alt="" />
+                        <img src="../imgs/taker1.jpg" alt="" />
                     </div>
                 </div>
             </div>
@@ -231,9 +234,9 @@
         ></script>
         <script
             type="text/javascript"
-            src="./resources/js/jquery.paroller.min.js"
+            src="./../js/jquery.paroller.min.js"
         ></script>
 
-        <script type="text/javascript" src="resources/js/index.js"></script>
+        <script type="text/javascript" src="../js/index.js"></script>
     </body>
 </html>

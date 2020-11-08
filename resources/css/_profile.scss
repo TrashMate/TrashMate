@@ -1,0 +1,21 @@
+.main-profile {
+    display: flex;
+    img {
+        border-radius: 50%;
+        width: 89px;
+        height: 89px;
+        cursor: pointer;
+    }
+    a {
+        font-size: 1.6rem;
+        margin: 0rem 0px 0px 0.6rem;
+        text-align: left;
+        color: #000000;
+        text-decoration: none;
+    }
+    p {
+        margin: 3px;
+        font-size: 1.2rem;
+    }
+    margin: 0px 0px 0.5rem 0px;
+}

@@ -92,7 +92,7 @@ body {
   margin: 0.5em 0px 0px 0.23em;
 }
 
-#profile-icon1 {
+#profile-icon {
   background-size: auto 74%;
   background-position: center 0.36rem;
 }
@@ -1046,11 +1046,10 @@ img {
     font-size: 1.3em;
     margin: 0.5em 0px 0px 0.21em;
   }
-  #profile-icon1 {
+  #profile-icon {
     background-size: auto 80%;
     background-position: center 0.38rem;
     border-radius: 21px;
-    width: 34px;
   }
   .selected-page {
     -webkit-transform: scale(0.96);
@@ -1206,11 +1205,10 @@ img {
     font-size: 1.3em;
     margin: 0.5em 0px 0px 0.21em;
   }
-  #profile-icon1 {
+  #profile-icon {
     background-size: auto 80%;
     background-position: center 0.38rem;
     border-radius: 21px;
-    width: 34px;
   }
   .selected-page {
     -webkit-transform: scale(0.96);

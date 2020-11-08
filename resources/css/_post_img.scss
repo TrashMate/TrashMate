@@ -1,2 +1,8 @@
 .post-img {
+    text-align: left;
+    label {
+        span {
+            transform: translate(50px, 100px);
+        }
+    }
 }

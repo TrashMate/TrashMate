@@ -921,6 +921,15 @@ svg #main-circ {
   }
 }
 
+.post-img {
+  text-align: left;
+}
+
+.post-img label span {
+  -webkit-transform: translate(50px, 100px);
+          transform: translate(50px, 100px);
+}
+
 @media (min-width: 900px) {
   :root {
     --navbar-size: 55px;

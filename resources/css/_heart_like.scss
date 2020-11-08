@@ -14,6 +14,9 @@ svg {
 .checkbox {
     display: none;
 }
+// .checkbox + label {
+//     height: 60px;
+// }
 
 .checkbox:checked + label svg {
     #heart {

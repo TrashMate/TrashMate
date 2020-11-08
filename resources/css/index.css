@@ -34,7 +34,7 @@ body {
   text-align: center;
 }
 
-.navbar {
+.navbar1 {
   z-index: 21;
   position: fixed;
   width: 100%;
@@ -53,6 +53,7 @@ body {
 
 .pages,
 .profile {
+  margin: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,7 +92,7 @@ body {
   margin: 0.5em 0px 0px 0.23em;
 }
 
-#profile-icon {
+#profile-icon1 {
   background-size: auto 74%;
   background-position: center 0.36rem;
 }
@@ -929,16 +930,35 @@ img {
   text-align: left;
 }
 
-.post-img label span {
-  -webkit-transform: translate(50px, 100px);
-          transform: translate(50px, 100px);
+.center-div .container {
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3) !important;
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3) !important;
+  margin: 0.6em 0px 0px 0px;
+  padding: 0.6rem;
+}
+
+.center-div .remember {
+  font-size: 1rem;
+}
+
+.center-div .remember input {
+  margin-right: 0.3rem;
+  margin-left: 0.5rem;
+}
+
+.center-div .card-footer {
+  font-size: 0.9rem;
+}
+
+.center-div .card {
+  width: 100%;
 }
 
 @media (min-width: 900px) {
   :root {
     --navbar-size: 55px;
   }
-  .navbar {
+  .navbar1 {
     height: var(--navbar-size);
     position: -webkit-sticky;
     position: sticky;
@@ -1026,7 +1046,7 @@ img {
     font-size: 1.3em;
     margin: 0.5em 0px 0px 0.21em;
   }
-  #profile-icon {
+  #profile-icon1 {
     background-size: auto 80%;
     background-position: center 0.38rem;
     border-radius: 21px;
@@ -1098,7 +1118,7 @@ img {
   .right-div {
     grid-column: -2 / -1;
   }
-  .navbar {
+  .navbar1 {
     height: var(--navbar-size);
     position: -webkit-sticky;
     position: sticky;
@@ -1186,7 +1206,7 @@ img {
     font-size: 1.3em;
     margin: 0.5em 0px 0px 0.21em;
   }
-  #profile-icon {
+  #profile-icon1 {
     background-size: auto 80%;
     background-position: center 0.38rem;
     border-radius: 21px;

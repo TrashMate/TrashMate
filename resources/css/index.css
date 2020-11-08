@@ -781,19 +781,18 @@ body {
     margin: 0px 0px;
     padding: 0px;
   }
-  .right-div iframe {
+  .right-div .right-post-div {
+    margin-top: 21px;
+  }
+  .right-div .right-post-div .post-img img {
     position: relative;
     z-index: 2;
     border-radius: 0px 0px 13px;
     -webkit-box-shadow: 0px 0px 13px rgba(157, 89, 0, 0.6);
             box-shadow: 0px 0px 13px rgba(157, 89, 0, 0.6);
     width: 30.76923vw;
-    height: calc( 9 / 16 * ( (8 / 26 * 100vw) - 1em + 1em ));
   }
-  .posts-div {
-    padding: 1rem;
-  }
-  .posts-div .trashmate-div {
+  .right-div .right-post-div .right-profile-div {
     z-index: 1;
     position: -webkit-sticky;
     position: sticky;
@@ -801,6 +800,28 @@ body {
     border-radius: 8px 8px 0px 0px;
     -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
             box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  }
+  .right-div .right-post-div .right-profile-div .right-profile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0px 0px 0.5rem 0px;
+  }
+  .right-div .right-post-div .right-profile-div .right-profile img {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+  }
+  .right-div .right-post-div .right-profile-div .right-profile a {
+    font-size: 1.2rem;
+    margin: 0rem 0px 0px 0.6rem;
+    text-align: left;
+    color: #000000;
+    text-decoration: none;
+  }
+  .right-div .right-post-div .right-profile-div p {
+    text-align: left;
   }
   .left-div .left-post-div {
     min-width: 0px !important;
@@ -823,6 +844,7 @@ body {
   .left-div .left-post-div .left-profile img {
     border-radius: 50%;
     width: 55px;
+    height: 55px;
     cursor: pointer;
   }
   .left-div .left-post-div .left-profile a {

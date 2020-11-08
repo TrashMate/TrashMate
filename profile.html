@@ -1,66 +1,247 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-  <style>
-    body {
-      background-image: url('bg.png');
-      background-image: url('bg2.png');
-      
-      
-    }
-    </style>
-	<meta charset="UTF-8">
-	<title>User Profile Card</title>
-	<link rel="stylesheet" href="q.css">
-	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link rel="stylesheet" type="text/css" href="resources/css/index.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Sedgwick Ave Display"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+        />
+        <style>
+            body {
+                background-image: url("2e4a2188.jpg");
+            }
+        </style>
+        <link
+            href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+            rel="stylesheet"
+            id="bootstrap-css"
+        />
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!--Bootsrap 4 CDN-->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            crossorigin="anonymous"
+        />
 
-<div class="wrapper">
-    <div class="left">
-        <img src="alex.png" 
-        alt="user" width="100">
-        <h4>Alex William</h4>
-         <p>UI Developer</p>
-    </div>
-    <div class="right">
-        <div class="info">
-            <h3>Information</h3>
-            <div class="info_data">
-                 <div class="data">
-                    <h4>Email</h4>
-                    <p>alex@gmail.com</p>
-                 </div>
-                 <div class="data">
-                   <h4>Phone</h4>
-                    <p>0001-213-998761</p>
-              </div>
+        <!--Fontawesome CDN-->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+            integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+            crossorigin="anonymous"
+        />
+        <title>TrashMate</title>
+    </head>
+
+    <body>
+        <div class="grid-container">
+            <a href="about.html" class="logo">
+                <img src="resources/logo/logo_giver.svg" alt="" />
+            </a>
+            <div class="navbar1">
+                <div class="pages">
+                    <a
+                        href="index.html"
+                        class="selected-page"
+                        id="page-home"
+                        style="
+                            background-image: url('resources/icons/home-selected.svg');
+                        "
+                    >
+                    </a>
+                    <a
+                        href="contact.html"
+                        id="page-contact"
+                        style="
+                            background-image: url('resources/icons/contact.svg');
+                        "
+                    >
+                    </a>
+                    <a
+                        href="about.html"
+                        id="page-about"
+                        style="
+                            background-image: url('resources/icons/about.svg');
+                        "
+                    >
+                    </a>
+                </div>
+                <div class="profile">
+                    <a
+                        href="search.html"
+                        id="search-icon"
+                        style="
+                            background-image: url('resources/icons/search.svg');
+                        "
+                    >
+                    </a>
+                    <a
+                        href="profile.html"
+                        id="profile-icon"
+                        style="
+                            background-image: url('resources/icons/profile.svg');
+                        "
+                    >
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="left-div"
+                data-paroller-factor="1.6"
+                data-paroller-type="foreground"
+                data-paroller-direction="vertical"
+            >
+                <h2>Recent Giver posts</h2>
+                <div class="left-post-div">
+                    <div class="left-profile">
+                        <img src="resources/imgs/5.jpeg" alt="" />
+                        <a href="#">Navpreet Singh Devpuri</a>
+                    </div>
+                    <div class="post-img">
+                        <img src="resources/imgs/giver1.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div
+                class="center-div"
+                data-paroller-factor="0.4"
+                data-paroller-type="foreground"
+                data-paroller-direction="vertical"
+            >
+                <h1 class="stylo-font">Trash to Treasure</h1>
+                <div class="showcase-div">
+                    <div class="showcase-options-div">
+                        <div class="showcase-options">
+                            <div class="showcase-options-container">
+                                <div class="showcase-option">
+                                    <div class="showcase-main-div">
+                                        <h3 class="showcase-option-name">
+                                            Givers
+                                        </h3>
+                                        <img
+                                            src="resources/logo/logo_giver.svg"
+                                            height="89"
+                                            width="89"
+                                        />
+                                    </div>
+                                    <div class="showcase-option-value">
+                                        <h2>4</h2>
+                                    </div>
+                                </div>
+                                <div class="showcase-option">
+                                    <div class="showcase-main-div">
+                                        <h3 class="showcase-option-name">
+                                            Takers
+                                        </h3>
+                                        <img
+                                            src="resources/logo/logo_taker.svg"
+                                            height="89"
+                                            width="89"
+                                        />
+                                    </div>
+                                    <div class="showcase-option-value">
+                                        <h2>4</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-price">
+                                <h3>Total Trash exchanges</h3>
+                                <h2>0</h2>
+                            </div>
+                            <div class="add-to-card-div">
+                                <button class="bubbly-button">Start Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2>Top Posts</h2>
+                <div class="top-post-div">
+                    <div class="top-profile-div">
+                        <div class="top-profile">
+                            <img src="resources/imgs/5.jpeg" alt="" />
+                            <a href="#"
+                                >Navpreet Singh Devpuri at Punjab
+                                <p>. 3 minutes ago</p>
+                            </a>
+                        </div>
+                        <p class="post-discription">look at this Creativity.</p>
+                    </div>
+                    <div class="post-img">
+                        <img src="resources/imgs/taker1.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div
+                class="right-div"
+                data-paroller-factor="0.6"
+                data-paroller-type="foreground"
+                data-paroller-direction="vertical"
+            >
+                <h2>Recent Taker posts</h2>
+                <div class="right-post-div">
+                    <div class="right-profile-div">
+                        <div class="right-profile">
+                            <img src="resources/imgs/5.jpeg" alt="" />
+                            <a href="#"
+                                >Navpreet Singh Devpuri at Punjab
+                                <p>. 3 minutes ago</p>
+                            </a>
+                        </div>
+                        <p class="post-discription">look at this Creativity.</p>
+                    </div>
+                    <div class="post-img">
+                        <img src="resources/imgs/taker1.jpg" alt="" />
+                    </div>
+                </div>
             </div>
         </div>
-      
-      <div class="projects">
-            <h3>Projects</h3>
-            <div class="projects_data">
-                 <div class="data">
-                    <h4>Recent</h4>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                 </div>
-                 <div class="data">
-                   <h4>Most Viewed</h4>
-                    <p>dolor sit amet.</p>
-              </div>
-            </div>
-        </div>
-      
-        <div class="social_media">
-            <ul>
-              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          </ul>
-      </div>
-    </div>
-</div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-1.11.0.min.js"
+        ></script> -->
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="./resources/js/jquery.paroller.min.js"
+        ></script>
 
-</body>
+        <script type="text/javascript" src="resources/js/index.js"></script>
+    </body>
 </html>

@@ -958,6 +958,13 @@ img {
   padding: 1rem;
 }
 
+.about-us .dev-profiles img {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+}
+
 @media (min-width: 900px) {
   :root {
     --navbar-size: 55px;

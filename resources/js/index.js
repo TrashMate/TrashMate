@@ -183,7 +183,7 @@ p = 1;
 lefthtml = $(".left-post-div")[0].outerHTML;
 leftdiv = $(".left-div")[0];
 div = document.createElement("div");
-for (i = 1; i < 34; ++i) {
+for (i = 1; i < 89; ++i) {
     temp = lefthtml.replace("taker1", "taker" + p);
     div = document.createElement("div");
     leftdiv.appendChild(div);
@@ -199,7 +199,7 @@ p = 1;
 righthtml = $(".right-post-div")[0].outerHTML;
 rightdiv = $(".right-div")[0];
 div = document.createElement("div");
-for (i = 1; i < 34; ++i) {
+for (i = 1; i < 13; ++i) {
     temp = righthtml.replace("taker1", "taker" + p);
     div = document.createElement("div");
     rightdiv.appendChild(div);

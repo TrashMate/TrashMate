@@ -820,6 +820,10 @@ body {
     color: #000000;
     text-decoration: none;
   }
+  .right-div .right-post-div .right-profile-div .right-profile p {
+    margin: 3px;
+    font-size: 0.9rem;
+  }
   .right-div .right-post-div .right-profile-div p {
     text-align: left;
   }

@@ -1,3 +1,4 @@
+$(".right-profile-div").css("top", $(".navbar").height());
 var a;
 var animateButton = function (e) {
     e.preventDefault;

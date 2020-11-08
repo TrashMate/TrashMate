@@ -144,4 +144,21 @@ $(document).ready(function () {
             }
         });
     }
+    dps = ["4.jpeg", "5.jpeg", "0.jpeg", "1.jpeg", "2.jpeg", "3.jpeg"];
+    names = [
+        "Thithi Mukherjee",
+        "Navpreet Devpuri",
+        "Navpreet Devpuri",
+        "Indrashis Mitra",
+        "Sulugna Mukherjee",
+        "Yashi Srivastava",
+    ];
+    profiles = $(".right-profile, .top-profile, .left-profile");
+    for (i = 0; i < profiles.length; ++i) {
+        src = profiles[i].firstElementChild.src;
+        profiles[i].lastElementChild.href =
+            "resources/profiles-demo-pages/" +
+            names[dps.indexOf(src.slice(src.lastIndexOf("/") + 1))] +
+            ".html";
+    }
 });

@@ -953,11 +953,23 @@ img {
   padding: 1rem;
 }
 
-.about-us .dev-profiles img {
+.dev-profile {
+  border-radius: 13px;
+  -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3) !important;
+          box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3) !important;
+  margin: 1em 0px 0px 0px;
+  padding: 0.6rem;
+}
+
+.dev-profile img {
   border-radius: 50%;
-  width: 55px;
-  height: 55px;
+  width: 89px;
+  height: 89px;
   cursor: pointer;
+}
+
+.dev-profile h4 {
+  margin-top: 0.6rem;
 }
 
 .main-profile {

@@ -39,7 +39,7 @@ $(document).ready(function () {
             "giver1",
             "giver" + Math.floor(Math.random() * ng + 1)
         );
-        temp = lefthtml.replace(
+        temp = temp.replace(
             "resources/imgs/0.jpeg",
             dps[Math.floor(Math.random() * dps.length)]
         );
@@ -52,10 +52,11 @@ $(document).ready(function () {
             "taker" + Math.floor(Math.random() * nt + 1)
         );
 
-        temp = righthtml.replace(
+        temp = temp.replace(
             "resources/imgs/0.jpeg",
             dps[Math.floor(Math.random() * dps.length)]
         );
+
         div = document.createElement("div");
         rightdiv.appendChild(div);
         div.outerHTML = temp;
@@ -66,7 +67,7 @@ $(document).ready(function () {
             templ[Math.floor(Math.random() * 1)] +
                 Math.floor(Math.random() * nt + 1)
         );
-        temp = centerhtml.replace(
+        temp = temp.replace(
             "resources/imgs/0.jpeg",
             dps[Math.floor(Math.random() * dps.length)]
         );

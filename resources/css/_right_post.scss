@@ -1,11 +1,11 @@
 .right-post-div {
     margin-top: 21px;
     .post-img {
+        box-shadow: $shadows-main-color-up;
         img {
             position: relative;
             z-index: 2;
             border-radius: 0px 0px $border-radius-pages;
-            box-shadow: $shadows-main-color-up;
             width: (8 / 26 * 100vw);
         }
     }

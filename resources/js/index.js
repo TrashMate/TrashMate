@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $(".right-profile-div").css("top", $(".navbar").height());
+    // $(".right-profile-div").css("top", $(".navbar").height());
     var a;
     var animateButton = function (e) {
         e.preventDefault;

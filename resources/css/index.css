@@ -954,6 +954,10 @@ img {
   width: 100%;
 }
 
+.about-us {
+  padding: 1rem;
+}
+
 @media (min-width: 900px) {
   :root {
     --navbar-size: 55px;

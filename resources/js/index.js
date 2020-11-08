@@ -17,8 +17,8 @@ $(document).ready(function () {
         bubblyButtons[i].addEventListener("click", animateButton, false);
     }
 
-    nt = 17;
-    ng = 11;
+    nt = 20;
+    ng = 15;
     dps = [
         ["resources/imgs/4.jpeg", "Thithi Mukherjee"],
         ["resources/imgs/5.jpeg", "Navpreet Devpuri"],

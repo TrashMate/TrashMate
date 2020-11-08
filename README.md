@@ -23,7 +23,7 @@ just a gateway between Trash Givers and Treasure Makers.
 
 ### 3. How we built it
 
-                    Learn-Try-Improve
+Learn-Try-Improve
 
 ### 4. Challenges we ran into
 
@@ -33,7 +33,7 @@ GUI, implementation of Google Login etc.
 
 ### 5. Accomplishments that we are proud of
 
-                    We learnt a lot
+We learnt a lot
 
 ### 6. What we learnt
 

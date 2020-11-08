@@ -822,12 +822,12 @@ body {
   }
   .left-div .left-post-div .left-profile img {
     border-radius: 50%;
-    width: 34px;
+    width: 55px;
     cursor: pointer;
   }
   .left-div .left-post-div .left-profile a {
-    font-size: 0.9rem;
-    margin: 0px 0px 0px 0.6rem;
+    font-size: 1rem;
+    margin: 0.8rem 0px 0px 0.6rem;
     text-align: left;
     color: #000000;
     text-decoration: none;

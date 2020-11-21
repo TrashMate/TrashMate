@@ -1,13 +1,14 @@
 @import "./variables";
 @import "./main_layouts";
 @import "./navbar";
-@import "./center_div_contents";
 @import "./bubbly_button";
 @import "./heart_like";
 @import "./post_img";
 @import "./login";
 @import "./about";
 @import "./profile";
+@import "./top_post_contents_350";
+@import "./center_div_contents_350";
 @media (min-width: 900px) {
     :root {
         --navbar-size: 55px;
@@ -17,9 +18,8 @@
     @import "./center_div_contents_900";
     @import "./right_div_contents";
     @import "./left_div_contents";
-    @import "./top_post_contents";
+    @import "./top_post_contents_900";
 }
 
 @media (max-width: 350px) {
-    @import "./center_div_contents_350";
 }

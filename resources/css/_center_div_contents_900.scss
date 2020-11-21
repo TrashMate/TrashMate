@@ -1,9 +1,16 @@
+@import "./showcase_main_div";
+
+@import "./_showcase_options_div";
+
+@import "./showcase_main_div_900";
+
 .center-div {
     // position: fixed;
     // width: calc(13 / 26 * 100vw - #{$grid-column-gap} - #{$page-padding-left});
     // left: calc(5 / 26 * 100vw - #{$grid-column-gap} - #{$page-padding-left});
     // top: 55px;
     // overflow: hidden;
+
     h1 {
         font-family: "Sedgwick Ave Display";
     }

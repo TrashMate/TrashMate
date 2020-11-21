@@ -1,9 +1,37 @@
-.showcase-div {
-    margin: 0rem;
-    padding: 0rem;
-    padding-top: 0.6rem;
+// .showcase-div {
+//     margin: 0rem;
+//     padding: 0rem;
+//     padding-top: 0.6rem;
+// }
+
+// .products {
+//     width: 100vw;
+// }
+
+@import "./_showcase_options_div";
+
+@import "./showcase_main_div";
+
+.center-div {
+    // position: fixed;
+    // width: calc(13 / 26 * 100vw - #{$grid-column-gap} - #{$page-padding-left});
+    // left: calc(5 / 26 * 100vw - #{$grid-column-gap} - #{$page-padding-left});
+    // top: 55px;
+    // overflow: hidden;
+
+    h1 {
+        margin-top: 2rem;
+        font-family: "Sedgwick Ave Display";
+    }
 }
 
 .products {
-    width: 100vw;
+    // width: 100%;
+    // width: initial;
+    // display: flex;
+    width: 100%;
+    // width: auto;
+    // display: block;
+    margin: 0px 0px;
+    padding: 0px;
 }

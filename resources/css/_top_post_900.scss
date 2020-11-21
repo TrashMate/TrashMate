@@ -1,0 +1,11 @@
+.top-post-div {
+    margin-top: 34px;
+    .post-img {
+        img {
+            width: calc(
+                13 / 26 * 100vw - #{$grid-column-gap} - #{$page-padding-left} -
+                    #{$grid-column-gap} - #{$grid-column-gap}
+            );
+        }
+    }
+}
